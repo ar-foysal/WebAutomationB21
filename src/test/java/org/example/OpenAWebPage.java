@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class OpenAWebPage extends DriverSetup{
 
     @Test
-    public void openMvnrepositoryPageAndTestTitle(){
+    public void openMavenRepositoryPageAndTestTitle(){
         browser.get("https://mvnrepository.com/artifact/org.testng/testng/7.8.0");
         Assert.assertEquals(browser.getTitle(), "Maven Repository: org.testng » testng » 7.8.0");
     }
