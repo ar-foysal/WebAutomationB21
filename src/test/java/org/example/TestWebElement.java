@@ -40,11 +40,5 @@ public class TestWebElement extends DriverSetup{
         WebElement selectDropdown = browser.findElement(By.xpath("//select[@id='dropdown-class-example']"));
         selectDropdown.click();
         Thread.sleep(5000);
-
-
-
-
-
-
     }
 }
