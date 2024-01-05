@@ -54,4 +54,12 @@ public class TestAdvanceWebElement extends DriverSetup{
         System.out.println(browser.findElement(By.xpath("//td[contains(text(),'Bong')] /preceding-sibling::td")).getText());
         System.out.println(browser.findElement(By.xpath("//td[contains(text(),'Bong')] /following-sibling::td[last()]")).getText());
     }
+    @Test
+    public void testEX() throws InterruptedException {
+        browser.get("https://www.ebl.com.bd/");
+        browser.findElement(By.xpath("//i[@class='fa fa-times']")).click();
+        browser.findElement(By.xpath("//a[normalize-space()='Career']")).click();
+        Thread.sleep(5000);
+
+    }
 }
