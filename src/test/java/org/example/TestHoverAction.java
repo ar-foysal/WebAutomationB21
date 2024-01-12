@@ -2,11 +2,10 @@ package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class testHoverAction extends DriverSetup{
+public class TestHoverAction extends DriverSetup{
 
     @Test
     public void testHover() throws InterruptedException {
